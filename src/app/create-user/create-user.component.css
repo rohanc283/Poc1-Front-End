@@ -1,0 +1,22 @@
+h2 {
+  color: aquamarine;
+}
+
+
+form {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+form div {
+  margin: 20px;
+}
+
+label {
+  color: coral;
+}

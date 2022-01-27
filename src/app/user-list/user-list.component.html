@@ -1,0 +1,45 @@
+<h2 class="text-center">Employee List</h2>
+<div class="container">
+  <table class="table table-success">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Doj</th>
+        <th scope="col">Dob</th>
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Pincode</th>
+        <th scope="col">Deleted</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.surname}}</td>
+        <td>{{user.doj}}</td>
+        <td>{{user.dob}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.password}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.pincode}}</td>
+        <td>{{user.deleted}}</td>
+        <td>
+          <button class="btn btn-primary" (click)="updateUsers(user.id)">Update</button>
+        </td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteUsers(user.id)">Delete</button>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

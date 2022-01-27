@@ -1,0 +1,51 @@
+<div class="container">
+  <h2 class="text-center">Create User!</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="">Name</label>
+      <input type="text" class="form-control" name="name" id="name" [(ngModel)]="user.name">
+    </div>
+
+    <div class="form-group">
+      <label for="">Sur Name</label>
+      <input type="text" class="form-control" name="surname" id="surname" [(ngModel)]="user.surname">
+    </div>
+
+    <div class="form-group">
+      <label for="">Pincode</label>
+      <input type="number" class="form-control" name="pincode" id="pincode" [(ngModel)]="user.pincode">
+    </div>
+
+    <div class="form-group">
+      <label for="">Date of Joining</label>
+      <input type="date" class="form-control" name="doj" id="doj" [(ngModel)]="user.doj">
+    </div>
+
+    <div class="form-group">
+      <label for="">Date Of Birth</label>
+      <input type="date" class="form-control" name="dob" id="dob" [(ngModel)]="user.dob">
+    </div>
+
+    <div class="form-group">
+      <label for="">Email</label>
+      <input type="email" class="form-control" name="email" id="email" [(ngModel)]="user.email">
+    </div>
+
+    <div class="form-group">
+      <label for="">Password</label>
+      <input type="password" class="form-control" name="password" id="password" [(ngModel)]="user.password">
+    </div>
+
+    <div class="form-group">
+      <label for="">Phone No</label>
+      <input type="number" class="form-control" name="phoneno" id="phoneno" [(ngModel)]="user.phoneno">
+    </div>
+
+    <div class="form-group">
+      <label for="">Deleted</label>
+      <input type="text" class="form-control" name="deleted" id="deleted" [(ngModel)]="user.deleted">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+
+  </form>
+</div>
